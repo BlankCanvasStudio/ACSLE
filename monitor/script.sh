@@ -23,5 +23,5 @@
 if [ "$1" = "" ]; then
     bash -l -O huponexit /usr/local/src/start_ttylog.sh
 else
-    $@;
+    eval "$@"
 fi
